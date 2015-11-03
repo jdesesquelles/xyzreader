@@ -6,7 +6,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="116dp"
+        android:layout_height="@dimen/article_list_app_bar_layout_height"
         android:theme="@style/AppTheme"
         android:background="?attr/android:colorPrimary"
         android:elevation="@dimen/toolbar_elevation">
@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
-            app:expandedTitleMarginStart="56dp"
+            app:expandedTitleMarginStart="@dimen/article_list_collapsing_tool_bar_expanded_title_margin_start"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
             <android.support.v7.widget.Toolbar
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:elevation="@dimen/toolbar_elevation"
-                app:contentInsetStart="16dp"
+                app:contentInsetStart="@dimen/article_list_collapsing_tool_bar_content_inset_start"
                 app:layout_collapseMode="pin">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -55,10 +55,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
-                    android:paddingBottom="28dp"
+                    android:paddingBottom="@dimen/article_list_recycler_view_padding_bottom"
                     android:paddingLeft="@dimen/article_list_margin"
                     android:paddingRight="@dimen/article_list_margin"
-                    android:paddingTop="0dp"
+                    android:paddingTop="@dimen/article_list_recycler_view_padding_top"
                     android:scrollbarStyle="outsideOverlay" />
         </android.support.v4.widget.SwipeRefreshLayout>
     </FrameLayout>

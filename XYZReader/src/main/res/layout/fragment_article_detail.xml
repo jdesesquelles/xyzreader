@@ -29,7 +29,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="112dp"
+                    android:layout_height="@dimen/detail_fragment_view_layout_height_size"
                     android:background="@drawable/photo_background_protection" />
 
             </FrameLayout>
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:maxWidth="@dimen/detail_card_max_width"
-                android:background="#fff"
+                android:background="@android:color/white"
                 android:elevation="2dp"
                 android:layout_marginTop="@dimen/detail_card_top_margin">
 
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginBottom="@dimen/detail_metabar_vert_padding"
-                    android:background="?attr/android:colorAccent"
+                    android:background="@android:color/white"
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/detail_metabar_vert_padding"
                     android:paddingLeft="@dimen/detail_inner_horiz_margin"
@@ -64,9 +64,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:lineSpacingMultiplier="0.9"
                         android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
-                        android:textColor="#ffff"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/detail_title_text_size" />
 
                     <TextView
@@ -74,7 +73,7 @@
                         style="?android:attr/textAppearanceSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#fff" />
+                        android:textColor="@color/ltgray" />
                 </LinearLayout>
 
 
@@ -97,8 +96,8 @@
 
     <ImageButton
         android:id="@+id/share_fab"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="@dimen/detail_fragment_image_button_layout_width_size"
+        android:layout_height="@dimen/detail_fragment_image_button_layout_height_size"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
