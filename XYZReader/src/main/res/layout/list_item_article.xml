@@ -1,10 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:layout_marginBottom="@dimen/article_list_item_layout_margin_bottom"
     android:layout_marginTop="@dimen/article_list_item_layout_margin_top"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
     <!--suppress AndroidLintContentDescription -->
     <com.example.xyzreader.ui.DynamicHeightNetworkImageView
@@ -12,10 +12,15 @@
         android:id="@+id/thumbnail"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_weight="2"
         android:scaleType="centerCrop"
         android:layout_height="100dp"
-        android:layout_width="100dp" />
-
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
     <TextView
         style="@style/TextAppearance.AppCompat.Subhead"
         android:ellipsize="end"
@@ -46,5 +51,7 @@
         android:paddingLeft="@dimen/article_list_item_subtitle_padding_left"
         android:paddingRight="@dimen/article_list_item_subtitle_padding_right"
         android:singleLine="true" />
-</RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
 
