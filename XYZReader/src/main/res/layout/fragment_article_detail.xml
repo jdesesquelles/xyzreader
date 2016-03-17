@@ -24,8 +24,7 @@
                     android:id="@+id/photo"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/detail_card_top_margin"
-                    android:scaleType="centerCrop"
-                    />
+                    android:scaleType="centerCrop" />
 
                 <View
                     android:layout_width="match_parent"
@@ -35,17 +34,17 @@
             </FrameLayout>
 
             <com.example.xyzreader.ui.MaxWidthLinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:maxWidth="@dimen/detail_card_max_width"
+                android:layout_marginTop="@dimen/detail_card_top_margin"
                 android:background="@android:color/white"
                 android:elevation="2dp"
-                android:layout_marginTop="@dimen/detail_card_top_margin">
+                android:maxWidth="@dimen/detail_card_max_width"
+                android:orientation="vertical">
 
 
-            <LinearLayout
+                <LinearLayout
                     android:id="@+id/meta_bar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
